@@ -1,0 +1,178 @@
+* {
+	font-family: "Montserrat", Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* header */
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+.logo span {
+	color: white;
+	padding: 5px;
+}
+
+.logo {
+	color: white;
+	font-size: 24px;
+}
+
+.navlinks {
+	display: flex;
+	text-decoration:none;
+}
+
+.nav-links ul li {
+	text-transform: uppercase;
+	list-style: none;
+	margin: 10px 10px;
+	padding: 0 5px;
+	font-size: 13px;
+	color: white;
+}
+.login , .signup{
+	text-decoration:none;
+	color: white;
+}
+
+.nav-links ul li:hover {
+	cursor: pointer;
+}
+
+/* showcase */
+
+.showcase {
+	background: url("img/bgimage.jpg");
+	opacity: 0.9;
+	position: relative;
+	min-height: 78vh;
+	width: 100%;
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	overflow: auto;
+}
+.overlay {
+	background: linear-gradient(90deg, #001, #001);
+	z-index: 1;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+	/* z-index: 1; */
+	background-color: #6c63ff;
+	overflow: auto;
+}
+.bg-image {
+	position: absolute;
+	height: 80vh;
+	width: 100%;
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+	z-index: 2;
+	overflow: auto;
+}
+.main-showcase {
+	position: relative;
+	z-index: 3;
+	overflow: auto;
+}
+.headline {
+	padding-top: 5vh;
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tagline {
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	margin: 10px 0;
+
+	padding: 20px 10px;
+}
+
+.tagline-s {
+	font-size: 50px;
+	width: 20vw;
+	text-align: center;
+	color: white;
+
+	margin: 10px 14vw;
+	padding: 20px 10px;
+}
+
+.description {
+	font-size: 20px;
+	text-align: center;
+	font-weight: 100px;
+	line-height: 21px;
+	color: white;
+	padding: 20px 0;
+}
+
+.input-form {
+	height: 40px;
+	width: 45vw;
+	color: black;
+	background: white;
+	margin: 50px 0;
+	padding: 0 10px;
+	font-size: 15px;
+	border: none;
+}
+
+.input-form:focus {
+	outline: none;
+}
+
+.search {
+	display: flex;
+}
+
+.search .btn {
+	height: 40px;
+	width: 150px;
+	margin-top: 50px;
+	padding-left: 10px;
+	background: black;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: none;
+}
+
+.search .btn:focus {
+	outline: none;
+}
+
+/* title tag */
+
+.tag {
+	display: flex;
+}
+
+.tag .title-tag {
+	font-size: 1.1em;
+	color: #666;
+	margin: 20px 20px;
+	letter-spacing: 1.5px;
+}
+
+.tag .title-trending {
+	font-size: 1em;
+	color: black;
+	font-weight: bolder;
+	text-decoration: none;
+	margin: 21px 20px;
+	letter-spacing: 1.5px;
+}
+

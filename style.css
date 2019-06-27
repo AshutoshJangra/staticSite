@@ -308,3 +308,126 @@
 }
 
 
+/* modal general */ 
+
+.login-modal, .signup-modal {
+   /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  padding-top: 60px;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity:0;
+  overflow: hidden;
+}
+
+.login-modal:target ,
+.signup-modal:target	{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+
+/* Modal Content/Box */
+.modal-container{
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  height: 500px;
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0; 
+  color: #fff;
+  font-size: 50px;
+  text-decoration: none;
+
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+/***    inside modal container ***/
+
+.login-window , .signup-window{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.signup-window{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.login-window .input-email,.input-pswd,
+.signup-window .input-email,.input-pswd, .input-name , .input-confirm-pswd{
+	width: 60%;
+	height: 40px;
+	border: none;
+	border-bottom: 0.1px black solid;
+	color: black;
+	padding: 0 10px;
+	margin:10px auto;
+}
+
+.login-window .input-email:focus ,.input-pswd:focus, 
+.signup-window .input-email:focus ,.input-pswd:focus, .input-name:focus , .input-confirm-pswd:focus{
+	outline: none;
+	border-bottom: .1px gray solid;
+}
+
+.login-window h2 ,
+.signup-window h2{
+	margin: 30px;
+	font-size: 1.1em;
+	letter-spacing: 2px;
+}
+
+.login-btn ,
+.signup-btn{
+	width: 64%;
+	height: 40px;
+	border:none;
+	background: black;
+	color: white;
+	margin: 40px auto;
+	padding: 0 10px;
+	text-transform: uppercase;
+}
+
+.login-modal .forget-pswd{
+	margin: 30px auto;
+	font-size: .9em;
+	color: gray;
+	letter-spacing: 2px;
+}
+
+.signup-modal .haveAcnt-text{
+	margin: 0px auto;
+	font-size: .9em;
+	color: gray;
+	letter-spacing: 2px;
+}

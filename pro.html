@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="style.css" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-			rel="stylesheet"
-		/>
-		<title>static</title>
-	</head>
-	<body>
-		<div class="main">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="pro.css">
+	<title>Plans</title>
+</head>
+<body>
+	<div class="container">
 			<!-- main-showcase -->
 			<div class="showcase">
 				<div class="overlay"></div>
@@ -25,7 +21,7 @@
 						<div class="nav-links">
 							<ul class="navlinks">
 								<li class="navlink">Explore</li>
-								<li class="navlink"><a href="./pro.html" class="pro">become a pro</a></li>
+								<li class="navlink"><a href="./index.html" class="pro">Home</a></li>
 								<li class="navlink"><a href="#login-modal" class="login">Login</a></li>
 								<li class="navlink"><a href="#signup-modal" class="signup">Signup</a></li>
 							</ul>
@@ -71,54 +67,53 @@
 					<!-- end of signup modal -->
 
 					<div class="headline">
-						<h2 class="tagline">
-							Best HD Stock Photos for FREE
+						<h2 class="tagline-p">
+							Get a membership for Premium Images and Videos. 
 						</h2>
-
-						<div class="search">
-							<input
-								type="text"
-								class="input-form"
-								placeholder="Search for image e.g Nature , Science"
-							/>
-							<button class="btn">Search</button>
-						</div>
 					</div>
 				</div>
 			</div>
 
-			<!--tab-->
-			<div class="tag">
-				<h1 class="title-tag">Free Stock Photos</h1>
-				<a href="/" class="title-trending">Trending</a>
+			<!-- Price cards section -->
+			<div class="price-section">
+				<h2 class="price-tagline">Flexible plans that grows with you</h2>
+
+				<div class="price-card-container">
+					<div class="price-card">
+						<h2 class="p-name">Starter</h2>
+						<h3 class="p-price">1$/mo</h3>
+						<h4 class="p-features">100 Images/Day</h4>
+						<h4 class="p-features">20 videos/Day</h4>
+						<h4 class="p-features">Commercial use allowed</h4>
+						<h4 class="p-features">No credits required</h4>
+						<button class="add-cart">add to cart</button>
+					</div>
+
+					<div class="price-card">
+						<h2 class="p-name">Deluxe</h2>
+						<h3 class="p-price">5$/mo</h3>
+						<h4 class="p-features">500 Images/Day</h4>
+						<h4 class="p-features">200 videos/Day</h4>
+						<h4 class="p-features">On-Demand Images</h4>
+						<h4 class="p-features">Commercial use allowed</h4>
+						<h4 class="p-features">No credits required</h4>
+						<button class="add-cart">add to cart</button>
+					</div>
+
+					<div class="price-card">
+						<h2 class="p-name">Ultimate</h2>
+						<h3 class="p-price">7$/mo</h3>
+						<h4 class="p-features">Unlimited Images</h4>
+						<h4 class="p-features">Unlimited Videos</h4>
+						<h4 class="p-features">On-Demand Images & Videos</h4>
+						<h4 class="p-features">Commercial use allowed</h4>
+						<h4 class="p-features">No credits required</h4>
+						<button class="add-cart">add to cart</button>
+					</div>
+				</div>
 			</div>
 
-			<!--Photo grid section -->
-			<div class="grid-section">
-				<div class="grid-column">
-					<div class="grid"><img class="grid-image" src="img/image1.jpg" alt="image" /></div>
-				    <div class="grid"><img class="grid-image" src="img/image2.jpg" alt="image" /></div>
-				    <div class="grid"><img class="grid-image" src="img/image3.jpg" alt="image" /></div>
-				    <div class="grid"><img class="grid-image" src="img/image4.jpg" alt="image" /></div>
-				</div>
-				
-				<div class="grid-column">
-					<div class="grid"><img class="grid-image" src="img/image5.jpg" alt="image" /></div>
-					<div class="grid"><img class="grid-image" src="img/image6.jpg" alt="image" /></div>
-					<div class="grid"><img class="grid-image" src="img/image7.jpg" alt="image" /></div>
-					<div class="grid"><img class="grid-image" src="img/image8.jpg" alt="image" /></div>
-				</div>
-				
-				<div class="grid-column">
-					<div class="grid"><img class="grid-image" src="img/image9.jpg" alt="image" /></div>
-					<div class="grid"><img class="grid-image" src="img/image10.jpg" alt="image" /></div>
-					<div class="grid"><img class="grid-image" src="img/image11.jpg" alt="image" /></div>
-					<div class="grid"><img class="grid-image" src="img/image12.jpg" alt="image" /></div>
-					<div class="grid"><img class="grid-image" src="img/bgimage.jpg" alt="image" /></div>		
-				</div>
 
-				<div class="grid-btn"><button class="load-btn">	load more</button></div>
-			</div>
 
 			<!-- subscribe to newsletter -->
 		    <div class="newsletter-section">
@@ -177,6 +172,7 @@
 		    <!-- copyright -->
 
 		    <div class="copyright-footer">Made with  <span class="heart"> ❤</span> by Prozecto Labs Pvt. Ltd.</div>
-		</div>
-	</body>
+
+	</div>
+</body>
 </html>

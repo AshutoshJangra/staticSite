@@ -1,0 +1,100 @@
+
+
+.pro{
+	text-transform: uppercase;
+	list-style: none;
+	margin: 10px 10px;
+	padding: 0 5px;
+	font-size: 13px;
+	color: white;
+	letter-spacing: 2px;
+}
+
+.showcase {
+	background: url("img/image9.jpg");
+	opacity: 0.9;
+	position: relative;
+	min-height: 60vh;
+	width: 100%;
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	overflow: auto;
+}
+
+.tagline-p{
+	font-size: 45px;
+	text-align: center;
+	color: white;
+	margin: 10px 0;
+	padding: 20px 10px;
+	font-weight: 100;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+}
+
+/* price cards section */
+.price-section{
+   width: 100%;
+   margin: 50px 0;
+   text-align: center;
+}
+
+.price-tagline{
+  font-size:1.3em;
+  color: gray;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.price-card-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.price-card{
+	margin: 10vh 0 ;
+	padding: 50px 60px;
+	background: #F7F9F9;
+	line-height: 41px;
+}
+
+.price-card .p-name{
+	font-size: 1.7em;
+	letter-spacing: 1px;
+}
+
+.price-card .p-price{
+	font-size: 2.2em;
+	color: red;
+	padding: 10px 0;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+
+.price-card .p-features{
+	font-size: .9em;
+	color: gray;
+	letter-spacing: 1px;
+
+}
+
+.price-card .add-cart{
+	width: 120px ;
+	height: 35px;
+	border: 0.1px black solid;
+	background: transparent;
+	color: black;
+	letter-spacing: 1px;
+	font-size: .7em;
+	text-transform: uppercase;
+	margin: 20px 10px 0 10px ;
+}
+
+.price-card .add-cart:focus , .add-cart:hover{
+	outline: none;
+	background: black;
+	color:white;
+	cursor: pointer;
+}

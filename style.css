@@ -24,7 +24,7 @@
 
 .navlinks {
 	display: flex;
-	text-decoration:none;
+	text-decoration: none;
 }
 
 .nav-links ul li {
@@ -36,14 +36,36 @@
 	color: white;
 	letter-spacing: 1px;
 }
-.login , .signup , .pro{
-	text-decoration:none;
+.login,
+.signup,
+.pro {
+	text-decoration: none;
 	color: white;
 }
 
 .nav-links ul li:hover {
 	cursor: pointer;
 }
+
+/* media queries for header */
+@media only screen and (max-width: 600px) {
+	.navlinks {
+		display: none;
+	}
+
+	.navlink .pro {
+		display: block;
+	}
+
+	.logo {
+		color: white;
+		font-size: 20px;
+		padding: 5px;
+	}
+}
+/* end of header meadia queries */
+
+
 
 /* showcase */
 
@@ -138,6 +160,43 @@
 	outline: none;
 }
 
+/* media queries for showcase */
+@media only screen and (max-width: 600px) {
+	.headline {
+		padding-top: 2vh;
+		max-width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.tagline {
+		font-size: 30px;
+		text-align: center;
+		color: white;
+		margin: 40px 0;
+		padding: 20px 10px;
+		font-weight: 100;
+		letter-spacing: 2px;
+		line-height: 1.5em;
+	}
+
+	.input-form {
+		height: 30px;
+		width: 60vw;
+
+		margin: 50px 0;
+		padding: 0 5px;
+		font-size: 0.7em;
+	}
+
+	.search .btn {
+		width: 25vw;
+		height: 30px;
+		font-size: 0.7em;
+	}
+}
+/* end of showcase meadia queries */
+
 /* title tag */
 
 .tag {
@@ -160,6 +219,24 @@
 	letter-spacing: 1.5px;
 }
 
+/* media queries for tag */
+
+@media only screen and (max-width: 600px) {
+	.tag .title-tag {
+		font-size: 0.9em;
+
+		margin: 20px 10px;
+		letter-spacing: 1px;
+	}
+
+	.tag .title-trending {
+		font-size: 0.8em;
+		margin: 21px 10px;
+		letter-spacing: 1px;
+	}
+}
+/* end of tag meadia queries */
+
 /*photo grid section */
 
 .grid-section {
@@ -179,6 +256,27 @@
 	height: auto;
 }
 
+/* media queries for grid section */
+
+@media only screen and (max-width: 600px) {
+	.col-2,
+	.col-3 {
+		display: none;
+	}
+
+	.grid-section {
+		display: flex;
+		flex-flow: row wrap;
+		margin: 0 5px;
+	}
+	.grid-section .grid {
+		flex: auto;
+		width: 97%;
+		padding: 2px;
+	}
+}
+/* end of grid section media queries */
+
 /*load more button */
 
 .grid-btn {
@@ -196,11 +294,24 @@
 	padding: 5px;
 }
 
-.load-btn:focus , .load-btn:hover {
+.load-btn:focus,
+.load-btn:hover {
 	outline: none;
 	background: black;
 	color: white;
 }
+
+/* media queries for load more & newsletter*/
+
+@media only screen and (max-width: 600px) {
+	.load-btn {
+		width: 150px;
+		height: 40px;
+		font-size: 0.7em;
+		padding: 5px;
+	}
+}
+/* end of load more & newsletter media queries */
 
 /* Newsletter section */
 
@@ -246,131 +357,191 @@
 	color: white;
 }
 
+/* media queries for newsletter*/
+
+@media only screen and (max-width: 600px) {
+	.newsletter-section {
+		flex-direction: column;
+		padding: 10px 30px 0px auto;
+		margin: 0;
+	}
+	.subscribe-text {
+		font-size: 1em;
+		padding: 5px 0 20px 0;
+		color: white;
+	}
+
+	.newsletter-form .email-form {
+		width: 70vw;
+		height: 35px;
+		padding: 0 10px;
+	}
+
+	.newsletter-form .subscribe-btn {
+		width: 40vw;
+		height: 35px;
+		font-size: 0.7em;
+	}
+}
+/* end of  newsletter media queries */
 
 /* footer */
-
-.footer{
+.footer-container {
 	background: black;
 	color: white;
+	text-align: center;
+	padding: 0px;
+}
+
+.footer {
 	display: flex;
-	justify-content: space-around ;
+	justify-content: space-around;
 	padding: 50px 10px;
 }
 
-.contact-details .c-name{
+.contact-details .c-name {
 	font-size: 1.3em;
 	font-weight: 100;
-    line-height: 21px;
-    letter-spacing: 2px;
-    padding: 10px 0 ;
+	line-height: 21px;
+	letter-spacing: 2px;
+	padding: 20px 0;
 }
 
-.contact-details .c-address , .c-email , .c-number{
-	font-size: .9em;
+.contact-details .c-address,
+.c-email,
+.c-number {
+	font-size: 0.9em;
 	font-weight: 100;
-    color: gray;
-    line-height: 21px;
-    letter-spacing: 2px;
-    padding: 5px 0 ;
+	color: gray;
+	line-height: 21px;
+	letter-spacing: 2px;
+	padding: 5px 0;
 }
 
-
-.footer-grid .grid-heading{
+.footer-grid .grid-heading {
 	color: white;
 	font-size: 17px;
-	font-weight: bold; 
+	font-weight: bold;
 	padding: 20px 10px;
-	
 }
 
-.footer-grid ul li{
+.footer-grid ul li {
 	list-style: none;
-	padding:5px 10px;
+	padding: 5px 10px;
 	font-size: 15px;
 	color: gray;
 }
 
-.footer-grid ul li:hover{
+.footer-grid ul li:hover {
 	color: white;
 	cursor: pointer;
 }
 
 /* copyright footer */
-.copyright-footer{
+.copyright-footer {
 	width: auto;
 	align-items: center;
 	text-align: center;
-   padding: 20px 10px;
+	padding: 15px 10px;
 	font-size: 15px;
-    background: black;
-    color: gray;
+	color: gray;
 }
 
-.copyright-footer .heart{
+.copyright-footer .heart {
 	margin: 0 5px;
-    color: red;
+	color: red;
 }
 
+/* media queries for footer & copyright*/
 
-/* modal general */ 
+@media only screen and (max-width: 600px) {
+	.footer {
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		padding: 50px 10px;
+	}
 
-.login-modal, .signup-modal {
-   /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-  padding-top: 60px;
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity:0;
-  overflow: hidden;
+	.grid-2 {
+		display: none;
+	}
+
+	.grid-1 {
+		padding-bottom: 20px;
+	}
+
+	.footer-grid {
+		margin: 10px 0;
+	}
+
+	.contact-details .c-address,
+	.c-email,
+	.c-number {
+		font-size: 0.8em;
+		padding: 7px 0;
+	}
+
+	.copyright-footer {
+		font-size: 0.9em;
+	}
+}
+/* end of  footer & copyright media queries */
+
+/* modal general */
+
+.login-modal,
+.signup-modal {
+	/* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+	padding-top: 60px;
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	overflow: hidden;
 }
 
-.login-modal:target ,
-.signup-modal:target	{
+.login-modal:target,
+.signup-modal:target {
 	visibility: visible;
 	opacity: 1;
 }
 
-
-
-
 /* Modal Content/Box */
-.modal-container{
-  background-color: #fefefe;
-  margin: 5px auto; /* 15% from the top and centered */
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
-  height: 500px;
+.modal-container {
+	background-color: #fefefe;
+	margin: 5px auto; /* 15% from the top and centered */
+	border: 1px solid #888;
+	width: 50%; /* Could be more or less, depending on screen size */
+	height: 500px;
 }
 
 /* The Close Button */
 .close {
-  /* Position it in the top right corner outside of the modal */
-  position: absolute;
-  right: 25px;
-  top: 0; 
-  color: #fff;
-  font-size: 50px;
-  text-decoration: none;
-
+	/* Position it in the top right corner outside of the modal */
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #fff;
+	font-size: 50px;
+	text-decoration: none;
 }
 
 /* Close button on hover */
 .close:hover,
 .close:focus {
-  color: red;
-  cursor: pointer;
+	color: red;
+	cursor: pointer;
 }
-
 
 /***    inside modal container ***/
 
-.login-window , .signup-window{
+.login-window,
+.signup-window {
 	display: flex;
 	flex-direction: column;
 	width: 80%;
@@ -378,43 +549,47 @@
 	text-align: center;
 }
 
-.signup-window{
-	display: flex;
-	flex-direction: column;
-	width: 80%;
+.signup-window {
 	margin: 10px auto;
-	text-align: center;
 }
 
-.login-window .input-email,.input-pswd,
-.signup-window .input-email,.input-pswd, .input-name , .input-confirm-pswd{
+.login-window .input-email,
+.input-pswd,
+.signup-window .input-email,
+.input-pswd,
+.input-name,
+.input-confirm-pswd {
 	width: 60%;
 	height: 40px;
 	border: none;
 	border-bottom: 0.1px black solid;
 	color: black;
 	padding: 0 10px;
-	margin:10px auto;
+	margin: 10px auto;
 }
 
-.login-window .input-email:focus ,.input-pswd:focus, 
-.signup-window .input-email:focus ,.input-pswd:focus, .input-name:focus , .input-confirm-pswd:focus{
+.login-window .input-email:focus,
+.input-pswd:focus,
+.signup-window .input-email:focus,
+.input-pswd:focus,
+.input-name:focus,
+.input-confirm-pswd:focus {
 	outline: none;
-	border-bottom: .1px gray solid;
+	border-bottom: 0.1px gray solid;
 }
 
-.login-window h2 ,
-.signup-window h2{
+.login-window h2,
+.signup-window h2 {
 	margin: 30px;
 	font-size: 1.1em;
 	letter-spacing: 2px;
 }
 
-.login-btn ,
-.signup-btn{
+.login-btn,
+.signup-btn {
 	width: 64%;
 	height: 40px;
-	border:none;
+	border: none;
 	background: black;
 	color: white;
 	margin: 40px auto;
@@ -423,16 +598,54 @@
 	letter-spacing: 2px;
 }
 
-.login-modal .forget-pswd{
+.login-modal .forget-pswd {
 	margin: 30px auto;
-	font-size: .9em;
+	font-size: 0.9em;
 	color: gray;
 	letter-spacing: 2px;
 }
 
-.signup-modal .haveAcnt-text{
+.signup-modal .haveAcnt-text {
 	margin: 0px auto;
-	font-size: .9em;
+	font-size: 0.9em;
 	color: gray;
 	letter-spacing: 2px;
 }
+
+/* media queries for login and signup modal */
+@media only screen and (max-width: 600px) {
+	.modal-container {
+		margin: 10px auto; /* 15% from the top and centered */
+		width: 90%; /* Could be more or less, depending on screen size */
+		height: 500px;
+	}
+
+	.login-window,
+	.signup-window {
+		width: 100%;
+		margin: 60px auto;
+	}
+
+	.signup-window {
+		width: 100%;
+		height: 450px;
+		margin: 5px auto;
+	}
+	.login-window .input-email,
+	.input-pswd,
+	.signup-window .input-email,
+	.input-pswd,
+	.input-name,
+	.input-confirm-pswd {
+		width: 70%;
+	}
+
+	.login-btn,
+	.signup-btn {
+		width: 76%;
+	}
+	.login-modal .forget-pswd {
+		margin: 5px auto;
+	}
+}
+/* end of login and signup modal meadia queries */
